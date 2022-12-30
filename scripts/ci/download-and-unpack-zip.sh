@@ -8,7 +8,9 @@ download_and_unpack() {
   mkdir -p $2
   # User agent for Edge on macOS 
   wget -U "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/94.0.4606.71 Safari/537.36 Edg/94.0.992.38" \
-       -qO- $1 | unzip - $2
+       -qO- $1 > "$2.zip" 
+  unzip "$2.zip"
+  rm "$2.zip"
 }
 
 if [ "${1}" != "--source-only" ]; then
