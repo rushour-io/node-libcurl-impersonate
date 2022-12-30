@@ -26,7 +26,7 @@ echo "Preparing release for libcurl-impersonate"
 if [ ! -d $2/source/$1 ]; then
   echo "Using release tarball"
 
-  $curr_dirname/download-and-unpack.sh \
+  $curr_dirname/download-and-unpack-zip.sh \
     https://github.com/rushour-io/curl-impersonate/archive/refs/heads/main.zip \
     $2
 
