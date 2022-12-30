@@ -9,7 +9,7 @@ download_and_unpack() {
   # User agent for Edge on macOS 
   wget -U "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/94.0.4606.71 Safari/537.36 Edg/94.0.992.38" \
        -qO- $1 > "$2.zip" 
-  unzip "$2.zip"
+  unzip "$2.zip" -d "$2"
 #  rm "$2.zip"
 }
 
