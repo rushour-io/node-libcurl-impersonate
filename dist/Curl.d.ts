@@ -79,7 +79,7 @@ declare class Curl extends EventEmitter {
      *
      * To disable this behavior set this property to `null`.
      */
-    static defaultUserAgent: string;
+    static defaultUserAgent: string | null;
     /**
      * Integer representing the current libcurl version.
      *

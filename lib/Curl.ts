@@ -148,7 +148,7 @@ class Curl extends EventEmitter {
    *
    * To disable this behavior set this property to `null`.
    */
-  static defaultUserAgent = `node-libcurl/${pkg.version}`
+  static defaultUserAgent: string | null = `node-libcurl/${pkg.version}`
 
   /**
    * Integer representing the current libcurl version.
