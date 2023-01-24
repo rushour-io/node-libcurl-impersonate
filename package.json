@@ -26,7 +26,7 @@
     "module_name": "node_libcurl",
     "module_path": "./lib/binding/",
     "remote_path": "./Binaries/",
-    "package_name": "node-libcurl-{platform}-{arch}.tar.gz",
+    "package_name": "node-libcurl-{platform}-{arch}-{node_abi}.tar.gz",
     "host": "https://github.com/rushour-io/node-libcurl-impersonate/releases/download"
   },
   "scripts": {
