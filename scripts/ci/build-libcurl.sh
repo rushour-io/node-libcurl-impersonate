@@ -86,7 +86,7 @@ export PKG_CONFIG_PATH=$PKG_CONFIG_PATH
     --disable-manual \
     --disable-shared \
     --prefix=$build_folder \
-    "${libcurl_args[@]}" \
+    ${libcurl_args+"${libcurl_args[@]}"} \
     "${@:3}"
 
 if [ "$(uname)" == "Darwin" ]; then
